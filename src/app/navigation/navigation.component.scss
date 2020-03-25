@@ -1,0 +1,77 @@
+@import "../../assets/global-scss/variables.scss";
+
+.nav-link{
+    color: $dark-font;
+    padding: 1em 0 1em 0;
+}
+
+nav {
+
+    font-size: 1.25rem;
+    line-height: 1.25em;
+    font-weight: 300;
+    width: 100%;
+}
+
+.top-nav{
+    overflow: hidden;
+
+    a{
+        display:block;
+        padding: .75em 16px .75em 16px;
+        float: right;
+        text-decoration: none;
+        color: $dark-font;
+        border-bottom-color: transparent;
+        margin: 0 2px 0 2px;
+    }
+    a:hover{
+        text-decoration: none;
+        color: $orange-5;
+        border-bottom-color: $orange-3;
+        border-bottom-width: 3px;
+        border-bottom-style: solid;
+        transition: ease .5s;
+    }
+    a.active-item{
+        text-decoration: none;
+        border-bottom-color: $orange-5;
+        border-bottom-width: 3px;
+        border-bottom-style: solid;
+    }
+
+    .icon{
+        display:none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top-nav a:not(:first-child) {display: none;}
+    .top-nav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .top-nav.responsive {position: relative;}
+    .top-nav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      cursor: pointer;
+    }
+    .top-nav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+nav .navbar .bg-light .navbar-expand-md .navbar-light{
+    background-color: #FFFFFF;
+}
+
+nav .navbar .bg-light .navbar-expand-md .navbar-light div a:active{
+    text-decoration: $orange-5;
+}

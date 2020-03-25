@@ -1,0 +1,68 @@
+<!--using ng-template to get around bug issue by using ng-content in a ngSwitch-->
+<ng-template #sectionCopy>
+    <ng-content></ng-content>
+</ng-template>
+
+
+<div [ngSwitch]="sectOrientation">
+     <!-- If the card can be found on the RIGHT of this orientation-->
+     <div *ngSwitchCase="'cardRight'" class="row light-section">
+        <div class="col-xs col-s col-m-1 col-l-1 col-xl-1"> 
+        </div>
+
+        <div class="col-xs-12 col-s-12 col-m-10 col-l-10 col-xl-10"> 
+            <div class="row">
+                <div class="col-xs-12 col-s-12 col-m-8 col-l-8 col-xl-8 sectionCopyContainer">
+                    <div class="sectionCopy">
+                        <div class="bodyHeader">
+                            <div [ngClass]="{ 'orange': themeColor==='orange', 'blue': themeColor==='blue', 'yellow': themeColor==='yellow' }">
+                                {{ subHead }} <br />
+                                <h2>{{ sectTitle }}</h2>
+                        </div>
+                        </div>
+                        <div class="bodyCopy">
+                            <ng-container *ngTemplateOutlet="sectionCopy"></ng-container>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-s-12 col-m-4 col-l-4 col-xl-4"> 
+                    <div class="card">
+                        <img src="{{ imagePath }}" />
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+    <!-- If the card is on the LEFT side of the section-->
+    <div *ngSwitchCase="'cardLeft'" class="row dark-section">
+        <div class="col-xs col-s col-m-1 col-l-1 col-xl-1"> 
+        </div>
+
+        <div class="col-xs-12 col-s-12 col-m-10 col-l-10 col-xl-10"> 
+            <div class="row">
+                <div class="col-xs-12 col-s-12 col-m-4 col-l-4 col-xl-4"> 
+                    <div class="card">
+                        <img src="{{ imagePath }}" />
+                    </div>
+                </div>
+                <div class="col-xs-12 col-s-12 col-m-8 col-l-8 col-xl-8 sectionCopyContainer">
+                    <div class="sectionCopy">
+                        <div class="bodyHeader">
+                            
+                            <div [ngClass]="{ 'orange': themeColor==='orange', 'blue': themeColor==='blue', 'yellow': themeColor==='yellow'}">
+                                {{ subHead }} <br />
+                                <h2>{{ sectTitle }}</h2>
+                            </div>
+                        </div>
+                        <div class="bodyCopy">
+                            <ng-container *ngTemplateOutlet="sectionCopy"></ng-container>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs col-s col-m-1 col-l-1 col-xl-1"> 
+        </div>
+    </div>
+</div>

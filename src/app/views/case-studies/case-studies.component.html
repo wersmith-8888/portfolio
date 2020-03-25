@@ -1,0 +1,24 @@
+<app-navigation [activeLink]="'caseStudies'"></app-navigation>
+
+<app-page-header [pageTitle]="'Case Studies'" [subHead]="'My Work'">
+</app-page-header>
+
+<app-info-section [subHead]="'User Experience Research'" [sectTitle]="'User Persona Development'" [sectOrientation]="'cardLeft'" themeColor="blue" [imagePath]="'/assets/images/persona_section_preview.png'">
+    As an organization, we had never really completed deep research on our dealer base to make better user based product decisions. Our dealers can be very complex with their needs, and our strategy team kept producing features that our dealers didn’t want and rarely used. We interviewed 25 dealers within a two hour radius of Indianapolis, Indiana.
+    <br /> <br />
+    <a [routerLink]="'/user-persona-development'"><button class="btn-primary blue"> View Project Details </button></a>
+</app-info-section>
+
+<app-info-section [subHead]="'Visual Design'" [sectTitle]="'Material Redesign'" [sectOrientation]="'cardRight'" themeColor="blue" [imagePath]="'/assets/images/material_redesign_preview.png'">
+    As a technology organization, the development teams took shortcuts and spent time building designs that were not up to par with industry. The UX team was tasked with delivering a design system and UI library for our developer’s disposal. Working with the development team, we selected the Material UI library (React). To help the development teams to think in a componetized way, we based the design system off of Brad Frost’s Atomic Design methodology. Once these core systems were selected, we started redesigning the current applications with proper visual design principles applied through the lens of Material Design.
+    <br /> <br />
+    <a [routerLink]="'/ng-material-redesign'"><button class="btn-primary blue"> View Project Details </button></a>
+</app-info-section>
+
+<app-info-section [subHead]="'Information Architecture, UX Design'" [sectTitle]="'Sales Enablement Tool Redesign'" [sectOrientation]="'cardLeft'" themeColor="yellow" [imagePath]="'/assets/images/sales_enablement_preview.png'">
+    Sparks Grove was engaged to help our client redesign an in-store sales enablement tool for their store employees. Store em- ployees’ roles ranged from sales people who helped complete 100+ item orders, relationship professionals who made sure the orders were accurately and effectively filled, customer service representatives, and management who were solely responsible for the store’s key performance metrics.
+    <br /><br />
+    Store employees are continually bombarded with questions about products while trying to complete multiple orders at once and use a desktop computer with a touch screen monitor, frequently showing customer order details.
+    <br /> <br />
+    <a [routerLink]="'/sales-planning-tool'"><button class="btn-primary yellow"> View Project Details </button></a>
+</app-info-section>

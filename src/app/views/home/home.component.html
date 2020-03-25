@@ -1,0 +1,34 @@
+<app-navigation [activeLink]="'home'"></app-navigation>
+
+<app-page-header 
+    [pageTitle]="'Hello. I\'m Wes.'" 
+    [subHead]="'Designer. Leader. Entrepreneur'">
+    <p>I am a <i><b>user experience design leader</b></i>. I have led the creation of two design systems, and helped establish two user research and usability testing processes. </p>
+    <p>I am an <i><b>entrepreneur</b></i>. I lead User Experience and Technology teams through complex challenges and problems through the use of design systems, good design process, and elegant design aesthetic. </p>
+    <p>I am a <i><b>teacher</b></i>. I have mentored 50+ new UX Designers and Software Engineers.</p>
+    <p>I am a <i><b>designer</b></i>.  I specialize in creating simple interfaces and experiences for B2B web applications and marketing websites. </p>
+    <p>Want to know more? <a href="#">Let's Chat</a></p>
+</app-page-header>
+
+<app-info-section [subHead]="'Research Focused'" [sectTitle]="'Analytical and Creative'" [sectOrientation]="'cardLeft'" themeColor="blue" [imagePath]="'/assets/images/ux_design_process.svg'">
+    I'm a <b><i>Full Stack UX Designer</i></b> who prototypes and designs through the lens of behavioral econcomics and psychology to learn about the context, emotions, and ecosystems of users.
+    <br /><br />
+    To <i>uncover user needs and test hypotheses and assumptions</i>, some of my favorite research techniques are guerilla usability testing, card sorting, competitive reviews and usability testing, contextual inquiry, and ethnogrpahic research.
+    <br /> <br />
+    My process starts with <i>blue sky thinking and validation</i>. From there, I narrow my designs through usability testing and funnel ideas into easily implementable pieces. I live and breathe hand-drawn wireframing and storyboarding. I believe solutioning without sketching limits innovation.
+    <br /><br />
+    <button class="btn-primary blue"> View Case Studies </button>
+</app-info-section>
+
+
+<app-info-section [subHead]="'Resume'" [sectTitle]="'Big Brand Experience'" [sectOrientation]="'cardRight'" [imagePath]="'/assets/images/brand_logos.png'" themeColor="orange">
+    I have been blessed with the opportunity to work with colleagues spanning across many of the fortune 500  brands and industries. A handful of the amazing brands I worked with in the past are Wells Fargo, Merrill Lynch, The Home Depot, Nissan, Equifax, McKesson, AT&T, Marathon Petroleum, and Eli Lilly and Co.
+    <br /> <br />
+    Unfortunately a lot of my work for these brands is under NDS. If you want to learn more about my experience outside of my case studies, please contact me.
+    <br /> <br />
+    <a [routerLink]="'/resume'" id="nav-resume"><button class="btn-primary orange"> Download Resume </button></a>
+    &nbsp;
+    <a [routerLink]="'/contact'" id="nav-contact"><button class="btn-secondary orange"> Contact Me </button></a>
+</app-info-section>
+
+

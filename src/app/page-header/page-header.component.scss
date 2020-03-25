@@ -1,0 +1,33 @@
+@import "../../assets/global-scss/variables.scss";
+
+h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1em;
+    margin: 0;
+    margin-left: -6px;
+}
+
+.subheader {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.pageHeader {
+    margin: 4rem 0 4rem 0;
+}
+
+.pageHeaderCopy{
+    font-size: 1.5rem;
+    font-weight: 300;
+
+    p{
+        line-height: .90em;
+        margin: 0;
+        padding: 0;
+    }
+
+    i .highlight{
+        font-weight: bold;
+    }
+}

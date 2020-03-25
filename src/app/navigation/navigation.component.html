@@ -1,0 +1,31 @@
+<nav>
+        <div class="row">
+                <div class="col-xs
+                col-s
+                col-m
+                col-l
+                col-xl"> </div>
+                <div class="col-xs-12
+                        col-s-12
+                        col-m-10    
+                        col-l-10    
+                        col-xl-10       
+                ">
+                        <div class="top-nav" id="myTopnav">
+                                <a class="icon">
+                                <i class="fa fa-bars"></i>
+                                </a>
+                                <a [routerLink]="'/contact'" [ngClass]="{ 'active-item': activeLink=='contact' }" id="nav-contact">Contact</a>
+                                <a [routerLink]="'/resume'" [ngClass]="{ 'active-item': activeLink=='resume' }"  id="nav-resume">Resume</a>
+                                <a [routerLink]="'/testimonials'"  [ngClass]="{ 'active-item': activeLink=='testimonials' }" id="nav-testimonials">Testimonials</a>
+                                <a [routerLink]="'/caseStudies'" [ngClass]="{ 'active-item': activeLink=='caseStudies' }" id="nav-Studies">Case Studies</a>
+                                <a [routerLink]="'/home'" [ngClass]="{ 'active-item': activeLink=='home' }" id="nav-home">Home</a>
+                        </div>
+                </div>
+                <div class="col-xs
+                col-s
+                col-m
+                col-l
+                col-xl"> </div>
+        </div>
+</nav> 

@@ -1,0 +1,38 @@
+@import "../../assets/global-scss/variables.scss";
+
+.dark-section{
+    background-color: $light-grey;
+    padding: 4rem 0 4rem 0;
+}
+
+.light-section{
+    background-color: $card-bg-white;
+    padding: 4rem 0 4rem 0;
+}
+
+.card{
+    background-color: $card-bg-white;
+    border: 1px solid $border-grey;
+    box-shadow: 0px 2px 4px $dark-shadow;
+    
+    img{
+        width: calc( 100% - 32px );
+        height: 100%;
+        margin: 16px;
+    }
+}
+
+.sectionCopyContainer{
+    display: table;
+    padding-left: 16px;
+}
+.sectionCopy{
+    display: table-cell;
+    vertical-align: middle;
+}
+.bodyCopy{
+    font-size: 1rem;
+    padding: 11px;
+}
+
+

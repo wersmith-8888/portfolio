@@ -1,0 +1,141 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import "assets/global-scss/variables.scss";
+
+:root {
+    box-sizing: border-box;
+    font-size: 16px;
+    color: $dark-font;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue","lato", "arial";
+    background-color: $blue-1;
+}
+
+body {
+    margin:0;
+    letter-spacing: -.01em;
+    p {
+        margin: 0;
+        padding: 0 0 1em 0;
+    }
+}
+
+a {
+    color: $orange-5;
+}
+
+
+/* Primary button has 3 colors. */
+button.btn-primary{
+    box-sizing: border-box;
+    background-color: $orange-5;
+    color: white;
+    border-radius: 3rem;
+    border: 0 solid transparent;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .75rem;
+    box-shadow: 0 2px 4px $dark-shadow;
+}
+
+button.btn-primary.orange{
+    background-color: $orange-5;
+}
+
+button.btn-primary.blue{
+    background-color: $blue-5;
+}
+
+button.btn-primary.yellow{
+    background-color: $yellow-5;
+    color: $dark-font;
+}
+
+.btn-primary.orange:hover{
+    background-color: $orange-6;
+    cursor: pointer;
+}
+
+.btn-primary.blue:hover{
+    background-color: $blue-6;
+    cursor: pointer;
+}
+
+.btn-primary.yellow:hover{
+    background-color: $yellow-6;
+    cursor: pointer;
+}
+
+
+
+
+/* secondary button w/3 colors*/
+button.btn-secondary{
+        box-sizing: border-box;
+        background-color: transparent;
+        border-radius: 3rem;
+        font-size: 1rem;
+        padding: calc(.75rem - 2px);
+    }
+
+button.btn-secondary.orange{
+        border: 2px solid $orange-5;
+        color: $orange-5;
+    }
+
+button.btn-secondary.blue{
+        border: 2px solid $blue-5;
+        color: $blue-5;
+    }
+button.btn-secondary.yellow{
+        border: 2px solid $yellow-5;
+        color: $yellow-5;
+    }
+
+button.btn-secondary:hover{
+        cursor: pointer;
+        color: white;
+        transition: .2s;
+        font-weight: 500;
+    }
+
+button.btn-secondary.orange:hover{
+        background-color: $orange-5;
+    }
+
+button.btn-secondary.blue:hover{
+        background-color: $blue-5;
+    }
+
+button.btn-secondary.yellow:hover{
+        background-color: $yellow-5;
+    }
+
+
+
+/*header. It can be used anywhere a header is needed. use in the tesimonial quote, and info-section component*/
+div .bodyHeader{
+    font-weight: 300;
+    font-size: 1rem;
+    
+    .orange{
+        border-left: 3px solid $orange-5;
+        padding: 8px 0 8px 8px;
+    }
+    
+    .blue{
+        border-left: 3px solid $blue-5;
+        padding: 8px 0 8px 8px;
+    }
+
+    .yellow{
+        border-left: 3px solid $yellow-5;
+        padding: 8px 0 8px 8px;
+    }
+
+    h2{
+        font-size: 3em;
+        font-weight: 400;
+        margin: 0;
+        margin-left: -3px;
+    }
+}

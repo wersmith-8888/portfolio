@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-xs col-s col-m-1 col-l-1 col-xl-1"></div>
+    <div class="col-xs-10 col-s-10 col-m-10 col-l-10 col-xl-10 fullCard">
+        <div class="quoteStyle">
+            <div [ngClass]="{ 'orange': themeColor==='orange', 'blue': themeColor==='blue', 'yellow': themeColor==='yellow' }">
+                <i class="fa fa-quote-left"></i>
+            </div>
+        </div>
+        <div class="quoteCopyStyle">
+            <ng-content></ng-content>
+        </div>
+
+        <br /><br /><br /><br />
+        <div class="row middle-xs middle-s middle-m middle-l middle-xl">
+            <div class="col-s-2 col-xs-2 col-m-3 col-l-3 col-xl-3"></div>
+            <div class="col-xs-4 col-s-4 col-m-2 col-l-2 col-xl-2  center-xs center-s end-m end-xl end-l">
+                <img src="{{ imagePath }}" />
+            </div>
+            <div class="col-s-4 col-xs-4 col-m-4 col-l-4 col-xl-4">
+                <div class="bar" [ngClass]="{ 'orange': themeColor==='orange', 'blue': themeColor==='blue', 'yellow': themeColor==='yellow' }"></div>
+                <span class="authorName" >{{ authorName }}</span><br />
+                <span class="authorTitle" >{{ authorTitle }}</span>
+
+            </div>
+            <div class="col-s col-xs col-m-3 col-l-3 col-xl-3"></div>
+        </div>
+    </div>
+    <div class="col-xs col-s col-m-1 col-l-1 col-xl-1"></div>
+</div>
