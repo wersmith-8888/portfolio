@@ -29,7 +29,41 @@ a {
     color: $orange-5;
 }
 
+hr{
+    color: $line-light-grey;
+    width: 100%;
+    border: .5px solid;
+}
 
+/* footer */
+.footer-copy{
+    margin: 3rem 0 3rem 0;
+
+    a{
+        color: $blue-2;
+        text-decoration: none;
+        display: block;
+        font-weight: 700;
+        padding: 0;
+    }
+    
+    a:hover{
+        color: $card-bg-white;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin:0;
+    }
+}
+
+.footer{
+    margin:0;
+    background-color: $blue-5;
+    background-image: linear-gradient(135deg, $blue-5, $blue-3);
+    color: $blue-2;
+}
 /* Primary button has 3 colors. */
 button.btn-primary{
     box-sizing: border-box;

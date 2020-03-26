@@ -7,7 +7,7 @@
     <p>I am an <i><b>entrepreneur</b></i>. I lead User Experience and Technology teams through complex challenges and problems through the use of design systems, good design process, and elegant design aesthetic. </p>
     <p>I am a <i><b>teacher</b></i>. I have mentored 50+ new UX Designers and Software Engineers.</p>
     <p>I am a <i><b>designer</b></i>.  I specialize in creating simple interfaces and experiences for B2B web applications and marketing websites. </p>
-    <p>Want to know more? <a href="#">Let's Chat</a></p>
+    <p>Want to know more? <a [routerLink]="'/contact'">Let's Chat</a></p>
 </app-page-header>
 
 <app-info-section [subHead]="'Research Focused'" [sectTitle]="'Analytical and Creative'" [sectOrientation]="'cardLeft'" themeColor="blue" [imagePath]="'/assets/images/ux_design_process.svg'">
@@ -17,7 +17,7 @@
     <br /> <br />
     My process starts with <i>blue sky thinking and validation</i>. From there, I narrow my designs through usability testing and funnel ideas into easily implementable pieces. I live and breathe hand-drawn wireframing and storyboarding. I believe solutioning without sketching limits innovation.
     <br /><br />
-    <button class="btn-primary blue"> View Case Studies </button>
+    <a [routerLink]="'/caseStudies'"><button class="btn-primary blue"> View Case Studies </button></a>
 </app-info-section>
 
 
@@ -26,9 +26,9 @@
     <br /> <br />
     Unfortunately a lot of my work for these brands is under NDS. If you want to learn more about my experience outside of my case studies, please contact me.
     <br /> <br />
-    <a [routerLink]="'/resume'" id="nav-resume"><button class="btn-primary orange"> Download Resume </button></a>
+    <a [routerLink]="'/resume'"><button class="btn-primary orange"> View My Resume </button></a>
     &nbsp;
-    <a [routerLink]="'/contact'" id="nav-contact"><button class="btn-secondary orange"> Contact Me </button></a>
+    <a [routerLink]="'/contact'"><button class="btn-secondary orange"> Contact Me </button></a>
 </app-info-section>
 
 
