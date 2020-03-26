@@ -10,6 +10,12 @@
     background-color: $blue-1;
 }
 
+@media screen and (max-width: 768px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
 body {
     margin:0;
     letter-spacing: -.01em;
