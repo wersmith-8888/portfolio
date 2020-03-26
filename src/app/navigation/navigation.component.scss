@@ -1,5 +1,11 @@
 @import "../../assets/global-scss/variables.scss";
 
+.logo img {
+  width: 2.5em;
+  padding: 1em 0 1em 0;
+  overflow: hidden;
+}
+
 .nav-link{
     color: $dark-font;
     padding: 1em 0 1em 0;
@@ -12,7 +18,7 @@
 .menu{
     a{
         display:block;
-        padding: .75em 16px .75em 16px;
+        padding: 1.5em 16px 1.5em 16px;
         float: right;
         text-decoration: none;
         color: $dark-font;
@@ -38,8 +44,7 @@
 
 label {
   margin: 0 40px 0 0;
-  font-size: 26px;
-  line-height: 70px;
+  font-size: 3rem;
   display: none;
   width: 26px;
   float: right;

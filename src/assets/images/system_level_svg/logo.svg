@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="88px" height="104px" viewBox="0 0 88 104" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Group Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#BCD6FF" offset="0%"></stop>
+            <stop stop-color="#3F83E9" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FFE880" offset="0%"></stop>
+            <stop stop-color="#FFD81B" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#73B9F6" offset="0%"></stop>
+            <stop stop-color="#3F83E9" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#FFD4B6" offset="0%"></stop>
+            <stop stop-color="#FF872B" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-3" transform="translate(-1262.000000, -2539.000000)">
+            <g id="Group-Copy-2" transform="translate(1262.000000, 2539.000000)">
+                <g id="Group-Copy">
+                    <path d="M18.7358644,104 L0,0 L15.3217627,0 L33,104 L18.7358644,104 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
+                    <path d="M19,104 L36.6782373,0 L52,0 L33.2641356,104 L19,104 Z" id="Combined-Shape" fill="url(#linearGradient-2)"></path>
+                    <polygon id="Path-4" fill="url(#linearGradient-3)" points="36 0 54.7358644 104 62 104 44.3217627 0"></polygon>
+                    <path d="M54.7358644,104 L36,0 L51.3217627,0 L69,104 L54.7358644,104 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
+                    <path d="M55,104 L72.6782373,0 L88,0 L69.2641356,104 L55,104 Z" id="Combined-Shape" fill="url(#linearGradient-4)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
