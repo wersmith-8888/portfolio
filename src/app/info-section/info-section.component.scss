@@ -17,7 +17,6 @@
     
     img{
         width: calc( 100% - 32px );
-        height: 100%;
         margin: 16px;
     }
 }
@@ -32,7 +31,37 @@
 }
 .bodyCopy{
     font-size: 1rem;
-    padding: 11px;
+    padding: 1em;
+}
+
+.mobile{
+    display: none;
+}
+
+.desktop{
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .sectionCopy{
+        padding: 2rem 0 0 0;
+    }
+    .dark-section{
+        padding: 3rem 1rem 2rem 1rem;
+    }
+
+    .light-section{
+        padding: 1rem;
+        padding: 3rem 1rem 2rem 1rem;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    .desktop{
+        display: none;
+    }
 }
 
 

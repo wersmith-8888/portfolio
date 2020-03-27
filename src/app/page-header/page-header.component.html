@@ -1,10 +1,10 @@
-<div class="row">
+<div class="row" [ngClass]="{ 'bg_image': sectionImage }">
     <div class="col-xs col-s col-m-2 col-l-2 col-xl-2"> </div>
     <div class="col-xs-10 col-s-10 col-m-8 col-l-8 col-xl-8"> 
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                 <div class="pageHeader">
-                    {{ subHead | uppercase}}
+                    {{ subHead }}
                     <h1>{{ pageTitle }}</h1>
                     <div class="pageHeaderCopy">
                         <ng-content></ng-content>

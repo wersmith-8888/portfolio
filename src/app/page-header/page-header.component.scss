@@ -4,7 +4,7 @@ h1 {
     font-size: 4rem;
     font-weight: 700;
     line-height: 1em;
-    margin: 0 0 .5rem -6px;
+    margin: 0 0 .5rem -3px;
 }
 
 .subheader {
@@ -19,9 +19,9 @@ h1 {
 .pageHeaderCopy{
     font-size: 1.5rem;
     font-weight: 300;
+    width: 45ch;
 
     p{
-        line-height: .90em;
         margin: 0;
         padding: 0;
     }
@@ -29,4 +29,53 @@ h1 {
     i .highlight{
         font-weight: bold;
     }
+}
+
+.bg_image{
+    background-image: url("../../assets/images/wesley_smith_image.png");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+}
+
+@media screen and (max-width: 768px) {
+    .bg_image{
+    background-image: none;
+    }
+
+    .pageHeaderCopy{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .bg_image{
+    background-image: none;
+    }
+
+    .pageHeaderCopy{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1199px) {
+    .bg_image{
+        background-image: url("../../assets/images/wesley_smith_image.png");
+    }
+    .pageHeaderCopy{
+        width: 45ch;
+        background-color: $blue-1;
+        padding-right: 1em;
+    }
+}
+
+@media screen and (min-width: 1380px) {
+    .bg_image{
+       background-image: url("../../assets/images/wesley_smith_image.png");
+    }
+
+    .pageHeaderCopy{
+        width: 45ch;
+    }
+
 }
