@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ConnectionService {
-  url = 'http://127.0.0.1:3000/api/contact';
+  url = '/api/contact';
 
   constructor(private http: HttpClient) { }
 
