@@ -1,0 +1,90 @@
+@import "../../../assets/global-scss/variables.scss";
+
+
+.formStyles {
+    margin: 0;
+    margin-top: -2rem;
+    padding: 2rem;
+    background-color: $card-bg-white;
+    box-shadow: 0 2px 2px 2px $border-grey
+
+}
+
+input {
+    width: calc(100% - 2rem);
+    font-size: 1.25rem;
+    padding: 1em;
+    margin: .25em 0 1em 0;
+    background-color: $light-grey;
+    border: none;
+    border-bottom: 2px solid $blue-2;
+    font-size: 1rem;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    // adding tranisition effect
+    transition: color 0.3s ease, background-color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+input:hover, input:focus {
+    border-bottom-color: $blue-5;
+  }
+
+select {
+    width: 40%;
+    font-size: 1rem;
+    padding: 1em;
+    margin: .25em 0 1em 0;
+    cursor: pointer;
+    border-radius: 0;
+    background-color: $light-grey;
+    border: none;
+    border-bottom: 2px solid $blue-2;
+    padding: 10px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    // adding tranisition effect
+    transition: color 0.3s ease, background-color 0.3s ease, border-bottom-color 0.3s ease;
+  }
+
+  /* For IE <= 11 */
+  select::-ms-expand {
+    display: none; 
+  }
+
+  select:hover, select:focus {
+  border-bottom-color: $blue-5;
+}
+
+.select-icon {
+    color: $dark-font;
+    position: relative;
+    height: inherit;
+    padding: 0;
+    margin: -2em;
+    pointer-events: none;
+    //transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+
+
+
+/*
+select {
+    font-size: 16px;
+	font-family: sans-serif;
+	font-weight: 700;
+	color: #444;
+	padding: .6em 1.4em .5em .8em;
+	width: 100%;
+	max-width: 100%;
+	border: 1px solid $border-grey;
+	appearance: none;
+    background-color: #fff;
+
+
+    :hover{
+        cursor: pointer;
+    }
+
+} */

@@ -3,7 +3,15 @@
 <app-page-header [pageTitle]="'Case Studies'" [subHead]="''" [sectionImage]="false">
 </app-page-header>
 
-<app-info-section [subHead]="'User Experience Research'" [sectTitle]="'User Persona Development'" [sectOrientation]="'cardLeft'" themeColor="blue" [imagePath]="'/assets/images/persona_section_preview.png'">
+<app-info-section [subHead]="'Information Architecture, UX Design'" [sectTitle]="'Sales Enablement Tool Redesign'" [sectOrientation]="'cardLeft'" themeColor="blue" [imagePath]="'/assets/images/sales_enablement_preview.png'">
+    Sparks Grove was engaged to help our client redesign an in-store sales enablement tool for their store employees. Store em- ployees’ roles ranged from sales people who helped complete 100+ item orders, relationship professionals who made sure the orders were accurately and effectively filled, customer service representatives, and management who were solely responsible for the store’s key performance metrics.
+    <br /><br />
+    Store employees are continually bombarded with questions about products while trying to complete multiple orders at once and use a desktop computer with a touch screen monitor, frequently showing customer order details.
+    <br /> <br />
+    <a [routerLink]="'/sales-planning-tool'"><button class="btn-primary blue"> View Project Details </button></a>
+</app-info-section>
+
+<app-info-section [subHead]="'User Experience Research'" [sectTitle]="'User Persona Development'" [sectOrientation]="'cardRight'" themeColor="blue" [imagePath]="'/assets/images/persona_section_preview.png'">
     Prior to this work, NextGear had not completed deep research on their user base to understand who uses the systems they provide to manage their short term car dealership loans. Originally, I conducted 9 phone interviews, where members of the product team joined the calls to hear more about the dealers and their daily process. 
     <br /> <br />
     Stemming from that small work, the product team was convinced to invest in and conduct a deep dive user study with the output being user personas. 
@@ -14,20 +22,11 @@
     <a [routerLink]="'/user-persona-development'"><button class="btn-primary blue"> View Project Details </button></a>
 </app-info-section>
 
-<app-info-section [subHead]="'UI Design'" [sectTitle]="'Material Redesign'" [sectOrientation]="'cardRight'" themeColor="blue" [imagePath]="'/assets/images/material_redesign_preview.png'">
-    The original apps that the development team built had low internal user adoption. The UX team was tasked with delivering a Design System and UI library for our developer’s use. 
+<app-info-section [subHead]="'UI Design'" [sectTitle]="'Material Redesign'" [sectOrientation]="'cardLeft'" themeColor="blue" [imagePath]="'/assets/images/material_redesign_preview.png'">
+    The original apps that the NextGear team built had low internal user adoption. The UX team was tasked with delivering a Design System and UI library for our developer’s use. 
     <br /><br />
-    We sought to understanding the development team’s skillset and architecture which, working alongside the development team, we selected the Material UI (React) library to build NextGear internal apps. 
+    When building the design system, I took inventory of design components across four production apps, understood the development team’s skillset / architecture and coupled that with industry leading Brad Frost’s Atomic Design System approach. 
     <br /><br />
-    As a part of this selection, I applied material design to the current apps, to get an initial understanding of Material’s visual effectiveness for the many different apps the development team creates and maintains.
-    <br /> <br />
     <a [routerLink]="'/ng-material-redesign'"><button class="btn-primary blue"> View Project Details </button></a>
 </app-info-section>
 
-<app-info-section [subHead]="'Information Architecture, UX Design'" [sectTitle]="'Sales Enablement Tool Redesign'" [sectOrientation]="'cardLeft'" themeColor="blue" [imagePath]="'/assets/images/sales_enablement_preview.png'">
-    Sparks Grove was engaged to help our client redesign an in-store sales enablement tool for their store employees. Store em- ployees’ roles ranged from sales people who helped complete 100+ item orders, relationship professionals who made sure the orders were accurately and effectively filled, customer service representatives, and management who were solely responsible for the store’s key performance metrics.
-    <br /><br />
-    Store employees are continually bombarded with questions about products while trying to complete multiple orders at once and use a desktop computer with a touch screen monitor, frequently showing customer order details.
-    <br /> <br />
-    <a [routerLink]="'/sales-planning-tool'"><button class="btn-primary blue"> View Project Details </button></a>
-</app-info-section>

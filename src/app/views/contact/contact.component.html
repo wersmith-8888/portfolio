@@ -2,8 +2,40 @@
 
 
 <app-page-header [pageTitle]="'Let\'s Talk!'" [subHead]="''">
-    <p>Want to learn about other types of work I've completed? </p>
-    <p>Reach out!</p>
-    <a href="mailto:webmaster@example.com"><button class="btn-primary orange"><i class="fa fa-envelope"></i> &nbsp; Send me an E-mail </button></a>
 </app-page-header>
- 
+<div class="row"> 
+    <div class="col-xs-1 col-s-1 col-m-2 col-l-2 col-xl-2"></div>
+    <div class="col-xs-10 col-s-10 col-m-8 col-l-8 col-xl-8">
+        <form [formGroup]="contactForm" (ngSubmit)="onClickSubmit()" class="formStyles">
+            <!-- Object for testing {{ contactForm.value | json }} -->
+            Name:
+            <div>
+                <input type="text" formControlName="fullName" placeholder="i.e. Jane Smith"/>
+            </div>
+
+            E-mail:
+            <div>
+                <input type="text" formControlName="email" placeholder="i.e. jane@smith.com"/>
+            </div>
+
+            Reason for contact:
+            <div>
+                <select formControlName="reason" placeholder="Select Reason">
+                    <option value="" disabled selected>Select Reason</option>
+                    <option>Hire Me Full Time</option>
+                    <option>Hire Me for Freelance</option>
+                    <option>Speaking Engagement</option>
+                    <option>Career Coaching</option>
+                    <option>Other</option>
+                </select>
+                    <span class = "select-icon">
+                        <i class="fa fa-chevron-down"></i>
+                    </span> 
+            </div>
+
+            <button class="btn-primary orange" type="submit"> <i class="fa fa-envelope"></i> &nbsp; Send me an E-mail </button>
+        </form>
+        <br />
+    </div>
+    <div class="col-xs col-s col-m col-l col-xl"></div>
+</div>

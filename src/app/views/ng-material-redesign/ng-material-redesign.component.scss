@@ -1,9 +1,18 @@
+@import "../../../assets/global-scss/variables.scss";
+
 img{
     width:100%;
 }
 
 h2{
-    margin: 2rem 0 .25rem 0;
+    margin: 0 0 .25rem 0;
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0;
 }
 
 .image_half{
@@ -12,4 +21,14 @@ h2{
 
 .p_i_body{
     font-size: 1.25rem;
+    padding: 4rem;
+}
+
+.dark{
+    background-color: $light-grey;
+}
+
+.center-section{
+    padding: 4rem 0 4rem 0;
+    background-color: $light-grey;
 }

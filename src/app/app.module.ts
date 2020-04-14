@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InfoSectionComponent } from './info-section/info-section.component';
@@ -18,6 +20,9 @@ import { PortfolioItemHeaderComponent } from './portfolio-item-header/portfolio-
 import { NgMaterialRedesignComponent } from './views/ng-material-redesign/ng-material-redesign.component';
 import { SalesPlanningToolComponent } from './views/sales-planning-tool/sales-planning-tool.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,11 +39,16 @@ import { SalesPlanningToolComponent } from './views/sales-planning-tool/sales-pl
     UserPersonaDevelopmentComponent,
     PortfolioItemHeaderComponent,
     NgMaterialRedesignComponent,
-    SalesPlanningToolComponent
+    SalesPlanningToolComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
