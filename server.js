@@ -1,20 +1,20 @@
+require('dotenv').config({path: __dirname + '/.env'});
 const express = require('express');
 const path = require('path');
 const app = express();
 
 const nodemailer = require('nodemailer');
 const ses = require('nodemailer-ses-transport');
-const mailerConfig = require('./config/mailerConfig')
+  
+const transporter = nodemailer.createTransport(ses({
+  accessKeyId: process.env.ACCESS_KEY_ID,
+  secretAccessKey: process.env.SECRET_ACCESS_KEY,
+  rateLimit: 5
+})); 
 
 const bodyParser = require('body-parser');
 
 app.use(express.json());
-
-const transporter = nodemailer.createTransport(ses({
-  accessKeyId: mailerConfig.accessKeyId,
-  secretAccessKey: mailerConfig.secretAccessKey,
-  rateLimit: 5
-}));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
