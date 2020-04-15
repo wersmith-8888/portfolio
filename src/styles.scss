@@ -30,6 +30,21 @@ body {
     }
 }
 
+img{
+    width:100%;
+}
+
+h2{
+    margin: 0 0 .25rem 0;
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0;
+}
+
 a {
     color: $orange-5;
 }
@@ -40,6 +55,36 @@ hr{
     border: .5px solid;
 }
 
+// body sections layouts
+
+.image_half{
+    padding: 2rem 0 2rem;
+}
+
+.p_i_body{
+    font-size: 1.25rem;
+    padding: 4rem;
+}
+
+.dark{
+    background-color: $light-grey;
+}
+
+.center-section{
+    padding: 4rem 0 4rem 0;
+    background-color: $light-grey;
+}
+
+.icon_image{
+    background-color: $orange-5;
+    margin: 2em;
+    height: calc(100% + 4em);
+    width: 5em;
+    padding: 2em;
+    color: $card-bg-white;
+    border-radius: 6em;
+    box-shadow: 0 2px 2px 2px $dark-shadow;
+}
 /* footer */
 .footer-copy{
     margin: 3rem 0 3rem 0;
